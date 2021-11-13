@@ -1,19 +1,367 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Home</title>
+    <!-- Global site tag (gtag.js) - Google Ads: 10805823228 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10805823228"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10805823228');
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="sobre.css">
+    <link rel="stylesheet" type="text/css" href="objetivo.css">
+    <link rel="stylesheet" type="text/css" href="cards.css">
+    <link rel="stylesheet" type="text/css" href="sobre-pessoal.css">
+    <link rel="stylesheet" type="text/css" href="perguntas.css">
+    <link rel="stylesheet" type="text/css" href="rodape.css">
 </head>
+
 <body>
+
     <header>
-    <img>
-</header>
-    
+        <div class="container-header">
+            <img class="logo-solto" src="imagens/alvo-solto.svg" alt="acrescer-digital">
+            <div class="logo-wrapper">
+
+                <img src="imagens/logo-4.png" alt="acrescer-digital">
+
+            </div>
+
+            <h1 class="titulo-principal">Destrave e Aumente 10X as vendas do seu E-commerce</h1>
+            <p class="subtitulo">Tenha ao seu lado estrategistas digitais especializados em gestão
+                de tráfego pago e E-comarketing focados em gerar resultados para sua empresa.</p>
+            <p class="agende">Agende uma consultoria grátis: </p>
+
+            <form>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <input type="text" class="form-control  " id="exampleInputName" aria-describedby="nameHelp"
+                            placeholder="Digite seu nome">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Seu melhor e-mail">
+                    </div>
+                </div>
+
+                <div class="mb-3 ">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <input type="text" class="form-control" id="exampleInputTelefone" aria-describedby="foneHelp"
+                            placeholder="Seu whatsapp">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary ">AGENDAR CONSULTORIA</button>
+            </form>
+
+            <div class="contador-container-wrapper" ">
+                
+                <div class=" contador-wrapper" id="countdown">
+                <p class="numero" id="days">00</p>
+                <p class="palavra">dias</p>
+            </div>
+
+            <div class="contador-wrapper">
+                <p class="numero" id="hours">00</p>
+                <p class="palavra">horas</p>
+            </div>
+            <div class="contador-wrapper">
+                <p class="numero" id="minutes">00</p>
+                <p class="palavra">minutos</p>
+            </div>
+            <div class="contador-wrapper">
+                <p class="numero" id="seconds">00</p>
+                <p class="palavra">segundos</p>
+            </div>
+
+
+        </div>
+        </div>
+    </header>
+
+    <section class="sobre">
+        <div class="container-sobre">
+            <div class="textos-sobre-wrapper">
+                <h2>Bem-vindo a <font color="#FFCC00"> Acrescer Digital</font>
+                </h2>
+                <div class="bola-wrapper-sobre">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+
+                <p>Somos a maior empresa especializada em E-commerces com objetivo em fazer empreendedores de todo
+                    Brasil que
+                    sentem dificuldades para expandir suas empresas comecem o processo de escala aumentando suas vendas
+                    e fazendo
+                    crescer seu Faturamento/Lucro.
+
+                </p>
+            </div>
+
+            <div class="alvo-sobre-wrapper">
+                <img class="scroll-image"  data-src="imagens/alvo-solto.svg">
+            </div>
+            <div class="sobre-img-wrapper">
+                <img class="scroll-image" data-src="imagens/bg-sobre-mao.jpg">
+            </div>
+            <div class="bola-wrapper-sobre-lateral">
+                <div class="bola"></div>
+                <div class="bola"></div>
+                <div class="bola bola3"></div>
+                <div class="bola bola4"></div>
+                <div class="bola bola5"></div>
+            </div>
+        </div>
+    </section>
+    <section class="objetivos">
+        <h2>o que fazemos</h2>
+        <div class="bola-wrapper-sobre">
+            <div class="bola"></div>
+            <div class="bola"></div>
+            <div class="bola"></div>
+        </div>
+        <div class="card-wrapper">
+            <div class="carousel owl-carousel">
+
+                <div class="card-wrapper-inside">
+                    <div class="card" id=c1>
+                        <div class="img-wrapper">
+                            <img src="imagens/zoom.png">
+                        </div>
+                        <i class="fas fa-book-reader"></i>
+                        <small class="frase-projeto">Estudo do <br>projeto</small>
+                    </div>
+                </div>
+
+                <div class="card-wrapper-inside">
+                    <div class="card" id=c2>
+                        <div class="img-wrapper">
+                            <img src="imagens/target.png">
+                        </div>
+                        <i class="fas fa-users"></i>
+                        <small class="frase-projeto">Estudo do <br>público alvo</small>
+                    </div>
+                </div>
+
+                <div class="card-wrapper-inside">
+                    <div class="card" id=c3>
+                        <div class="img-wrapper">
+                            <img src="imagens/corneta.svg">
+                        </div>
+                        <i class="fas fa-dollar-sign"></i>
+                        <small class="frase-projeto">Criação de <br>anúncios</small>
+                    </div>
+                </div>
+
+                <div class="card-wrapper-inside">
+                    <div class="card" id=c4>
+                        <div class="img-wrapper">
+                            <img src="imagens/rocket.png">
+                        </div>
+                        <i class="fas fa-lightbulb"></i>
+                        <small class="frase-projeto">Definição de <br>objetivos </small>
+                    </div>
+                </div>
+
+                <div class="card-wrapper-inside">
+                    <div class="card" id=c5>
+                        <div class="img-wrapper">
+                            <img src="imagens/analysis.png">
+                        </div>
+                        <i class="fas fa-chart-bar"></i>
+                        <small class="frase-projeto">Análise</small>
+                    </div>
+                </div>
+
+                <div class="card-wrapper-inside">
+                    <div class="card" id=c6>
+                        <div class="img-wrapper">
+                            <img src="imagens/web-optimization.png">
+                        </div>
+                        <i class="fas fa-cogs"></i>
+                        <small class="frase-projeto">Otimização</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <h2>como fazemos</h2>
+
+        <div class="bola-wrapper-sobre-card">
+            <div class="bola"></div>
+            <div class="bola"></div>
+            <div class="bola"></div>
+        </div>
+
+        <p class="texto-abaixo-titulo">
+            Deixar seu negócio no topo é nossa meta,
+            levantamos sua audiencia do zero e mantemos
+            todos os seus clientes.
+        </p>
+
+        <div class="card-wrapper">
+            <div class="carousel-card owl-carousel">
+
+
+                <div class="card-como" id=ca>
+                    <p>1</p>
+                    <h3>estratégia</h3>
+                </div>
+
+                <div class="card-como" id=cb>
+                    <p>2</p>
+                    <h3>gestão</h3>
+                </div>
+
+                <div class="card-como" id=cc>
+                    <p>3</p>
+                    <h3>estruturação</h3>
+                </div>
+
+                <div class="card-como" id=cd>
+                    <p>4</p>
+                    <h3>otimização</h3>
+                </div>
+
+                <div class="card-como" id=ce>
+                    <p>5</p>
+                    <h3>treinamento</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="sobre-pessoal">
+        <div class="sobre-pessoal-container">
+            <h2>CEO e Fundador da <font color="#FFCC00">Acrescer Digital</font>
+            </h2>
+            <div class="bola-wrapper-sobre-pessoal">
+                <div class="bola"></div>
+                <div class="bola"></div>
+                <div class="bola"></div>
+            </div>
+
+            <div class="alvo-wrapper">
+                <img class="scroll-image" data-src="imagens/alvo-solto.svg">
+            </div>
+            <div class="foto-isaac-wrapper">
+                <img class="scroll-image" data-src="imagens/foto3-com-oculos.png">
+            </div>
+            <div class="foto-isaac-wrapper-desktop">
+                <img class="scroll-image" data-src="imagens/bola-sobre-mim.png">
+            </div>
+            <p>
+                Isaac Cabral, especialista em gestão estratégica de tráfego pago para E-commerces.
+                Já investiu nos últimos 12 meses mais de R$200.000,00 mil reais em anúncios com mais de R$1.000.000,00
+                faturado
+                através da sua metodologia.
+                Isaac Cabral fundou a Acrescer Digital com a missão de ajudar empreendedores a destravar e escalar seu
+                E-commerces em todo território brasileiro de forma estratégica e analítica.
+
+            </p>
+        </div>
+    </section>
+    <section class="perguntas">
+
+
+        <h2>FAQ</h2>
+        <div class="bola-wrapper-sobre">
+            <div class="bola"></div>
+            <div class="bola"></div>
+            <div class="bola"></div>
+        </div>
+        <nav class="nav-perguntas">
+
+            <ul class="ul-perguntas">
+                <li class="pergunta perg1"><i class="fas fa-plus"></i>Como funciona essa consultoria? <i
+                        class="fas fa-chevron-circle-down"></i>
+                <li class="resposta resp1">O nosso time de marketing vai te mostrar quais ações deverá ser tomada e como
+                    aplicar essas ações para aumentar
+                    o faturamento do seu E-commerces.
+                </li>
+                </li>
+                <li class="pergunta perg2"><i class="fas fa-plus"></i>Quanto tempo dura a consultoria?<i
+                        class="fas fa-chevron-circle-down"></i>
+                <li class="resposta resp2">No máximo 45 minutos. Esse será o tempo necessário para mostrar a estratégia
+                    ideal para seu segmento.
+
+                </li>
+
+                <li class="pergunta perg3"><i class="fas fa-plus"></i>Posso fazer de qualquer lugar e qualquer
+                    dispositivo?<i class="fas fa-chevron-circle-down"></i>
+                <li class="resposta resp3">Sim. A reunião é online, basta ter uma conexão à internet para participar.
+                </li>
+                </li>
+                </li>
+                <li class="pergunta perg4"><i class="fas fa-plus"></i>Quando será a consultoria?<i
+                        class="fas fa-chevron-circle-down"></i>
+                <li class="resposta resp4">Você precisa preencher o formulário, enviar os dados, e agendar um horário na
+                    agenda virtual que aparecerá na próxima página.
+                </li>
+                </li>
+                </li>
+            </ul>
+
+
+        </nav>
+
+    </section>
+    <footer class="rodape">
+        <h2>como podemos ajudar?</h2>
+
+        <a class="fale-conosco" href="#">fale conosco</a>
+
+        <ul>
+            <li><a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://facebook.com"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://facebook.com"><i class="fab fa-whatsapp-square"></i></a></li>
+        </ul>
+        <p class="copy">&#169; 2021 Acrescer Digital</p>
+
+    </footer>
+
+    <script src="js/image-scroll.js"> </script>
+    <script src="js/contador.js" defer> </script>
+    <script src="js/objetivo.js"> </script>
+    <script src="js/objetivos1.js"> </script>
+    <script src="js/perguntas.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

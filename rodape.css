@@ -1,0 +1,87 @@
+.rodape{
+ 
+    padding-top: 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url('../imagens/rodape.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.rodape h2{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-family: var(--font-primary);
+}
+
+ul{
+    width: 100%;
+    margin-top: 4rem;
+    text-align: center;
+    padding-left: 0;
+}
+ul li i{
+    font-size: 2rem;
+    color: rgb(148, 148, 148);
+}
+ul li{
+    display: inline-block;
+    
+}
+
+.fale-conosco{
+    padding-top: .3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1.4rem;
+    font-family: var(--font-primary);
+    width: 12rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: 2px #fff solid;
+    border-radius: 16px;
+    text-transform: uppercase;
+}
+.copy{
+    padding-left: 1rem;
+    font-family: var(--font-primary);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    background-color: var(--amarelo);
+    margin-top: 2rem;
+}
+
+@media screen and (min-width:1024px){
+.rodape{
+    padding-top: 4rem;
+}
+    .rodape h2{
+        text-align: left;
+        margin-left: 5rem;
+        float: left;
+    }
+    .fale-conosco{
+       margin-left: 70rem;
+
+       font-size: 1.2rem;
+    }
+    .fale-conosco:hover{
+        background-color: var(--amarelo);
+        color: black;
+    }
+    .fa-facebook-square:hover{
+        color: rgb(108, 142, 255);
+    }
+    .fa-instagram-square:hover{
+        color: rgb(252, 57, 99);
+    }
+    .fa-whatsapp-square:hover{
+        color:rgb(79, 255, 79)
+    }
+}
