@@ -2,7 +2,7 @@ $(".carousel-card").owlCarousel({
     loop:true,
     margin:20,  
     autoplay:true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
     autoplayHoverPause:true,
     nav:true,
     navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],

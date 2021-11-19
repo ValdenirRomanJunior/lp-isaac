@@ -8,10 +8,12 @@
 }
 
 .objetivos h2 {
+    font-family: var(--font-third);
     text-transform: uppercase;
     text-align: center;
     color: #fff;
     line-height: 4rem;
+    font-size: 2.2rem;
     width: 55%;
     text-align: center;
     margin: 0 auto;
@@ -56,17 +58,26 @@
 
 #c1 {
     height: 50%;
-    background-color: #47D5F8;
+    background-image: url('../imagens/estudo-de-produto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #c2 {
     height: 60%;
-    background-color: #42DFAF;
+    background-image: url('../imagens/estudo-publico-alvo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #c3 {
     height: 70%;
-    background-color: #cac524;
+    background-image: url('../imagens/criação-de-anuncios.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #c3 .img-wrapper img {
@@ -76,12 +87,18 @@
 
 #c4 {
     height: 80%;
-    background-color: #EE6976;
+    background-image: url('../imagens/definição-de-objetivos.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #c5 {
     height: 90%;
-    background-color: #e2c233
+    background-image: url('../imagens/analise.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #c5 .img-wrapper {
@@ -92,10 +109,7 @@
     margin-bottom: 2rem;
 }
 
-#c6 {
-    background-color: #CF69EE;
-    height: 100%;
-}
+
 
 #c6 .img-wrapper {
     margin-bottom: 2rem;
@@ -170,11 +184,13 @@
 }
 
 .frase-projeto {
-    color: #fff;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     text-align: center;
     line-height: 1.3rem;
     font-size: 1.1rem;
     font-family: var(--font-primary);
+    background: rgba(10, 10, 10, 0.61);
 }
 
 @media screen and (min-width:1024px) {

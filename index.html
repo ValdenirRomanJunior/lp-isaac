@@ -19,9 +19,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -85,8 +87,9 @@
                             placeholder="Seu whatsapp">
                     </div>
                 </div>
-
-                <button type="submit" class="btn btn-primary ">AGENDAR CONSULTORIA</button>
+                <div class="btn3">
+                <button type="submit" class="btn btn-primary">AGENDAR CONSULTORIA</button>
+            </div>
             </form>
 
             <div class="contador-container-wrapper" ">
@@ -137,8 +140,25 @@
             <div class="alvo-sobre-wrapper">
                 <img class="scroll-image" data-src="imagens/alvo-solto.svg">
             </div>
+
+
+
             <div class="sobre-img-wrapper">
-                <img class="scroll-image" data-src="imagens/bg-sobre-mao.jpg">
+                <img class="scroll-image" data-src="imagens/lampada.jpg">
+            </div>
+
+            <div class="metricas-wrapper">
+
+                <div class="metrica-inside-wrapper">
+                    <p class="number-investimento counter">200,000</p>
+                    <small>Em investimentos</small>
+                </div>
+
+                <div class="metrica-inside-wrapper">
+                    <p class="number-faturamento counter">1,000,000</p>
+                    <small>Em faturamento</small>
+                </div>
+
             </div>
             <div class="bola-wrapper-sobre-lateral">
                 <div class="bola"></div>
@@ -209,15 +229,7 @@
                     </div>
                 </div>
 
-                <div class="card-wrapper-inside">
-                    <div class="card" id=c6>
-                        <div class="img-wrapper">
-                            <img src="imagens/web-optimization.png">
-                        </div>
-                        <i class="fas fa-cogs"></i>
-                        <small class="frase-projeto">Otimização</small>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -282,11 +294,9 @@
             <div class="alvo-wrapper">
                 <img class="scroll-image" data-src="imagens/alvo-solto.svg">
             </div>
-            <div class="foto-isaac-wrapper">
-                <img class="scroll-image" data-src="imagens/foto3-com-oculos.png">
-            </div>
+
             <div class="foto-isaac-wrapper-desktop">
-                <img class="scroll-image" data-src="imagens/bola-sobre-mim.png">
+                <img class="scroll-image" data-src="imagens/bola-sobre-mim.jpg">
             </div>
             <p>
                 Isaac Cabral, especialista em gestão estratégica de tráfego pago para E-commerces.
@@ -302,7 +312,7 @@
     <section class="perguntas">
 
 
-        <h2>FAQ</h2>
+        <h2>PERGUNTAS FREQUENTES</h2>
         <div class="bola-wrapper-sobre">
             <div class="bola"></div>
             <div class="bola"></div>
@@ -346,9 +356,9 @@
     </section>
     <footer class="rodape">
         <h2>como podemos ajudar?</h2>
-
-        <a class="fale-conosco" href="#">fale conosco</a>
-
+        <div class="btn2">
+        <a class="fale-conosco" href="#">Agendar consultoria</a>
+    </div>
         <ul>
             <li><a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a></li>
             <li><a href="https://facebook.com"><i class="fab fa-instagram-square"></i></a></li>
@@ -357,9 +367,11 @@
         <p class="copy">&#169; 2021 Acrescer Digital</p>
 
     </footer>
+  
 
     <script src="js/image-scroll.js"> </script>
     <script src="js/contador.js" defer> </script>
+    <script src="js/contador-sobre.js" async> </script>
     <script src="js/objetivo.js"> </script>
     <script src="js/objetivos1.js"> </script>
     <script src="js/perguntas.js"> </script>

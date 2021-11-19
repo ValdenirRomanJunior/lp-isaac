@@ -1,21 +1,18 @@
-
-
 .sobre {
     background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     
-   
 }
+
 .container-sobre {
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
-
 }
-.bola-wrapper-sobre-lateral{
+
+.bola-wrapper-sobre-lateral {
     display: none;
 }
 
@@ -58,7 +55,6 @@
 .alvo-sobre-wrapper {
     width: 100%;
     height: 10%;
-   
 }
 
 .alvo-sobre-wrapper img {
@@ -71,6 +67,50 @@
 
 .sobre-img-wrapper {
     display: none;
+}
+
+.metricas-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.metrica-inside-wrapper {
+    background-color: rgb(29, 29, 29);
+    ;
+    border-radius: 10px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45%;
+}
+
+.metricas-wrapper p {
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    padding: 0;
+    margin: 0;
+}
+
+.metricas-wrapper p::before {
+    content: "+";
+    margin-right: .2rem;
+}
+
+.metricas-wrapper small {
+    color: rgb(158, 158, 158);
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    color: #fff;
 }
 
 @media screen and (min-width:640px) {
@@ -93,17 +133,14 @@
     .alvo-sobre-wrapper {
         display: none;
     }
-   
-    .container-sobre{
+    .container-sobre {
         margin-top: 0;
         padding-top: 0;
     }
-  
     .bola-wrapper-sobre {
         display: flex;
         justify-content: center;
         align-items: center;
-      
     }
     .bola {
         width: .4rem;
@@ -113,36 +150,32 @@
         margin-left: .5rem;
         opacity: 80%;
     }
-    .bola3{
+    .bola3 {
         opacity: 60%;
     }
-    .bola4{
+    .bola4 {
         opacity: 40%;
     }
-    .bola5{
+    .bola5 {
         opacity: 30%;
     }
     .bola-wrapper-sobre-lateral {
-        margin-top: 14rem;
+        margin-top: 15rem;
         height: 10rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        float: left;
     }
-    .sobre h2{
+    .sobre h2 {
         margin-top: 2rem;
     }
     .sobre p {
-
         width: 70%;
         font-size: 1.4rem;
         color: rgb(136, 136, 136);
         text-align: center;
-       
-      
     }
-    .textos-sobre-wrapper{
+    .textos-sobre-wrapper {
         width: 45%;
         display: flex;
         flex-direction: column;
@@ -152,7 +185,6 @@
         margin-top: 7rem;
     }
     .sobre-img-wrapper {
-       
         display: block;
         width: 50%;
         height: 95vh;
@@ -162,5 +194,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    .metricas-wrapper {
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        float: right;
+        margin-right: 4rem;
     }
 }

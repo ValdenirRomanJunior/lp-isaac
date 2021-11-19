@@ -1,15 +1,17 @@
 .container-header{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+   
 }
 header{
-    min-height: 100vh;
     background-image: url('../imagens/bg-principal-mobile.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
+   
+  
        
 }
 .logo-solto{
@@ -32,16 +34,21 @@ header{
     object-position: center;
  
 }
-.titulo-principal{
+.form-control {
     
-    text-shadow: 0px 0px 3px rgba(231, 255, 12, 0.911),
-    0px 0px 13px rgba(255, 238, 4, 0.993),
-    0px 0px 23px rgba(234, 250, 17, 0.925);   
+    opacity: 70%;
+    background-color: rgb(129, 129, 129);
+}
+.form-control::placeholder{
+    color:#fff;
+}
+.titulo-principal{
+  
     text-transform: uppercase;
     font-family: var(--font-primary);
     color:var(--amarelo) ;
     font-size: 1.5rem;
-    width: 90%;
+    width: 100%;
 }
 .subtitulo{
     color: white;
@@ -53,6 +60,8 @@ header{
     color:#fff;
     font-family: var(--font-primary);
     margin-bottom: 0;
+    width: 100%;
+    font-size: 1rem;
 }
 .btn-primary{
     box-shadow:  0 0 1em gold;
@@ -67,6 +76,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 
 }
 .contador-wrapper{
@@ -101,7 +111,7 @@ header{
     padding-right: .5rem;
     border-start-start-radius:.2rem ;
     align-items: center;
-    background: #fff;
+    background: linear-gradient(rgba(129, 129, 129, 0.7), rgba(129, 129, 129, 0.7));
     color: rgb(0, 255, 0);
     font-size: 1.4rem;
     height: 100%;
@@ -112,7 +122,7 @@ header{
     padding-right: .3rem;
     border-start-start-radius:.2rem ;
     align-items: center;
-    background: #fff;
+    background: linear-gradient(rgba(129, 129, 129, 0.7), rgba(129, 129, 129, 0.7));
     color: rgb(4, 0, 255);
     font-size: 1.4rem;
     height: 100%;
@@ -124,29 +134,98 @@ header{
     padding-right: .4rem;
     border-start-start-radius:.2rem ;
     align-items: center;
-    background: #fff;
+    background: linear-gradient(rgba(129, 129, 129, 0.7), rgba(129, 129, 129, 0.7));
     color: rgb(217, 255, 0);
     font-size: 1.4rem;
     height: 100%;
   
 
 }
+.btn3{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1em gold;
+}
+.btn3::before{
+content: "";
+position: absolute;
+width: 333px;
+height: 200px;
+background:conic-gradient(#252525, #f8f85a);
+animation: efeito 1.3s ease infinite;
+transition: .5s ease;
+}
+@keyframes efeito{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.btn{
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 48px;
+    background: var(--amarelo);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    
+}
+
+.btn:hover{
+    background-color: #000;
+}
+@media screen and (min-width:450px){
+    .titulo-principal{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width:535px){
+    .agende{
+        margin-bottom: 0;
+    }
+    .titulo-principal{
+        font-size: 2.1rem;
+    }
+}
+
+
+
 @media screen and (min-width:640px) {
 
     header{
         background-position: initial;
     }
+    .agende{
+        margin-bottom: 0;
+    }
     .logo-wrapper{
-        margin-top: 2rem;
+        margin-top: 3rem;
         width: 13rem;
         height: 9rem;
        
+    }
+    .titulo-principal{
+        font-size: 2.6rem;
     }
     .subtitulo{
         font-size: 1.2rem;
     }
     #exampleInputName{
-        margin-top: 5%;
+        margin-top: 0;
     }
     .contador-container-wrapper{
         margin-top: 1rem;
@@ -156,13 +235,21 @@ header{
     
 }
 
+
+
+
 @media screen and (min-width:1024px) {
     .container-header{
       width: 30%;
       margin-left: 18rem;
+      display: flex;
+      flex-direction: column;
+
+     
+     
     }
+    
     header{
-    height: 100vh;
     background-image: url('../imagens/bg-principal-desktop.jpg');
     background-position: center;
     justify-content: center;
@@ -186,24 +273,44 @@ header{
     .titulo-principal{
         width: 100%;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    .btn-primary{
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        font-size: 1.3rem;  
-        
-    }
-    .btn-primary:hover{
-        background-color: #fff;
-        color:var(--amarelo) ;
-    }
+   
+  
     .contador-wrapper{
-        margin-top: .7rem;
+        margin-top: .2rem;
+    }
+    .btn{
+        height: 48px;   
+        font-size: 1.4rem;
     }
 #exampleInputName{
     margin-top: 0;
 }
-    
-    
 }
+@media screen and (min-width:1200px) {
+    .titulo-principal{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width:1300px) {
+    .titulo-principal{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (min-width:1450px) {
+    .titulo-principal{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:1600px) {
+    .titulo-principal{
+        font-size: 2.2rem;
+    }
+}
+    @media screen and (min-width:1800px) {
+        .titulo-principal{
+            font-size: 2.5rem;
+        }
+}
+    

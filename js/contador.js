@@ -6,7 +6,7 @@ const daysContainer= document.querySelector('#days')
 const quinzeDiasMais = new Date().getFullYear()+1;
 const  newyearTime = new Date( `January 01 ${quinzeDiasMais} 00:00:00`)
 
-const updateCountdown = () => {
+const updateCountdowns = () => {
 
     const currentTime = new Date();
     const difference= newyearTime-currentTime
@@ -24,4 +24,4 @@ const updateCountdown = () => {
 
 }
 
-setInterval(updateCountdown, 1000)
+setInterval(updateCountdowns, 1000)

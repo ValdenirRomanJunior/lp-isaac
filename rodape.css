@@ -1,12 +1,15 @@
-.rodape{
- 
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 2rem;
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url('../imagens/rodape.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../imagens/rodape.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.rodape h2{
+
+.rodape h2 {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -15,39 +18,72 @@
     font-family: var(--font-primary);
 }
 
-ul{
+ul {
     width: 100%;
     margin-top: 4rem;
     text-align: center;
     padding-left: 0;
 }
-ul li i{
+
+ul li i {
     font-size: 2rem;
     color: rgb(148, 148, 148);
 }
-ul li{
+
+ul li {
     display: inline-block;
-    
+
+}
+.btn2{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.btn2::before{
+content: "";
+position: absolute;
+width: 230px;
+height: 200px;
+background:conic-gradient(#383838, #c8ff00);
+animation: efeito 1.3s ease infinite;
+transition: .5s ease;
+}
+@keyframes efeito{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.fale-conosco:hover{
+    background-color: #c8ff00;
+    color: #000000;
 }
 
 .fale-conosco{
-    padding-top: .3rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    font-size: 1.4rem;
-    font-family: var(--font-primary);
-    width: 12rem;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    border: 2px #fff solid;
-    border-radius: 16px;
     text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 196px;
+    height: 48px;
+    background: #121212;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    letter-spacing: 1px;
+    font-size: .8rem;
 }
-.copy{
-    padding-left: 1rem;
+
+
+
+.copy {
+    text-align: center;
     font-family: var(--font-primary);
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -57,31 +93,29 @@ ul li{
     margin-top: 2rem;
 }
 
-@media screen and (min-width:1024px){
-.rodape{
-    padding-top: 4rem;
-}
-    .rodape h2{
+@media screen and (min-width:1024px) {
+    .rodape {
+        padding-top: 4rem;
+      display: block;
+    }
+    .rodape h2 {
         text-align: left;
-        margin-left: 5rem;
+        margin-left: 10%;
         float: left;
+        margin-top: .5rem;
     }
-    .fale-conosco{
-       margin-left: 70rem;
-
-       font-size: 1.2rem;
-    }
-    .fale-conosco:hover{
-        background-color: var(--amarelo);
-        color: black;
-    }
-    .fa-facebook-square:hover{
+    
+    .fa-facebook-square:hover {
         color: rgb(108, 142, 255);
     }
-    .fa-instagram-square:hover{
+    .fa-instagram-square:hover {
         color: rgb(252, 57, 99);
     }
-    .fa-whatsapp-square:hover{
-        color:rgb(79, 255, 79)
+    .fa-whatsapp-square:hover {
+        color: rgb(79, 255, 79)
+    }
+    .btn2{
+        margin-left: 70%;
+       
     }
 }
