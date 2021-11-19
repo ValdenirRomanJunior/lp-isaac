@@ -16,6 +16,7 @@
     color: #fff;
     margin-bottom: 3rem;
     font-family: var(--font-primary);
+    font-size: 1.4rem;
 }
 
 ul {
@@ -38,7 +39,7 @@ ul li {
     display: flex;
     position: relative;
     width: 200px;
-    height: 50px;
+    height: 45px;
     border-radius: 7px;
     overflow: hidden;
     align-items: center;
@@ -69,15 +70,16 @@ transition: .5s ease;
     z-index: 1;
     display: block;
     width: 196px;
-    height: 48px;
-    background: #121212;
+    height: 44px;
+    background: var(--amarelo);
     text-align: center;
-    line-height: 52px;
+    line-height: 50px;
     border-radius: 6px;
     text-decoration: none;
-    color:#fff;
+    color:rgb(0, 0, 0);
     letter-spacing: 1px;
     font-size: .8rem;
+    font-weight: bold;
 }
 
 
@@ -96,13 +98,15 @@ transition: .5s ease;
 @media screen and (min-width:1024px) {
     .rodape {
         padding-top: 4rem;
-      display: block;
+        display:flow-root;
+        
     }
     .rodape h2 {
         text-align: left;
         margin-left: 10%;
         float: left;
         margin-top: .5rem;
+        font-size: 1.8rem;
     }
     
     .fa-facebook-square:hover {
@@ -116,6 +120,17 @@ transition: .5s ease;
     }
     .btn2{
         margin-left: 70%;
+       
+    }
+    .copy {
+        text-align: center;
+        font-family: var(--font-primary);
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        background-color: var(--amarelo);
+        margin-bottom: 0;
        
     }
 }

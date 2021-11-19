@@ -1,6 +1,6 @@
 $(".carousel").owlCarousel({
     loop:true,
-    margin:25,
+    margin:20,
     autoplayHoverPause:true,
     nav:true,
     navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
@@ -12,7 +12,7 @@ $(".carousel").owlCarousel({
             items: 2,
         },
         1024:{
-            items: 4,
+            items: 3,
         },
     }
 })
